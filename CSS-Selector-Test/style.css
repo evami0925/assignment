@@ -14,13 +14,23 @@ body {
   - Give them font family of Raleway
 */
 * {
-  margin: 0;
   font-family: "Raleway";
+  box-sizing: border-box;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 /* Step 3: Select h3 elements and:
   - Give it top and bottom margin of 24px
 */
+h3 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 h3 {
   margin: 24px 0px;
 }
@@ -33,7 +43,7 @@ h3 {
 
 button {
   border: none;
-  background-color: none;
+  background: none;
   padding: none;
   font-weight: bold;
   cursor: pointer;
@@ -54,7 +64,8 @@ button {
   - Box shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.1)
   - Margin bottom of 12px
 */
-div [class*="alert"] {
+
+div.alert {
   padding: 8px;
   background-color: white;
   border-radius: 8px;
@@ -82,7 +93,7 @@ div [class*="alert"] {
   - Border radius of 50px
 */
 .alert__container::before {
-  content: " ";
+  content: "";
   min-width: 6px;
   background-color: #0090d7;
   border-radius: 50px;
@@ -92,9 +103,12 @@ div [class*="alert"] {
   - Background color of #d20d38 if inside div element with danger class
   - Background color of #e8ac00 if inside div element with warning class
 */
-/* 需要提问 */
-
-
+.danger .alert__container::before {
+  background-color: #d20d38;
+}
+.warning .alert__container::before {
+  background-color: #e8ac00;
+}
 
 /* Step 11: Select elements with class of alert__details: 
   - Give it top and bottom padding of 12px
@@ -103,6 +117,7 @@ div [class*="alert"] {
 */
 .alert__details {
   padding-top: 12px;
+  padding-bottom: 12px;
 }
 .alert__details p {
   font-size: 14px;
@@ -116,7 +131,8 @@ div [class*="alert"] {
   - Color of grey
   - Not-allowed cursor
 */
-:disabled {
+
+.warning button:disabled  {
   color: grey;
   cursor: none;
 }
@@ -139,7 +155,12 @@ button.warning {
   - Margin top of 40px
   - Font style of italic
 */
-p:nth-child(1) {
+/* p:nth-child(1) {
+  margin-top: 40px;
+  font-style: italic;
+} */
+
+p:first-child {
   margin-top: 40px;
   font-style: italic;
 }
@@ -147,7 +168,8 @@ p:nth-child(1) {
  - Text color: white
  - Background color of #393939
 */
-h3.dark-mode {
+
+h3 ~ div.dark-mode {
   color: white;
   background-color: #393939;
 }
