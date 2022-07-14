@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./Roboto/Roboto-Black.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Source_Sans_Pro";
+  src: url(./Source_Sans_Pro/SourceSansPro-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Source_Sans_Pro";
+  src: url(./Source_Sans_Pro/SourceSansPro-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #1e3143; */
+}
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  margin: 265px 494px;
+  min-width: 452px;
+  min-height: 494px;
+  border: 1px solid #1e3143;
+  border-radius: 40px;
+  position: relative;
+}
+h1 {
+  font-family: "roboto";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56.25px;
+  position: absolute;
+  margin: 78px 194px 360px 58px;
+  color: #08979c;
+}
+
+.start {
+  display: inline-block;
+  position: absolute;
+  margin-top: 157px;
+  left: 58px;
+  font-family: "Source_Sans_Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-justify: 1px;
+  color: #08979c;
+}
+
+.account,
+.pwd {
+  position: absolute;
+  border: 1px solid #1e3143;
+  border-radius: 60px;
+  width: 336px;
+  height: 60px;
+  margin-left: 58px;
+}
+
+.account {
+  margin-top: 203px;
+}
+
+.pwd {
+  margin-top: 286px;
+}
+
+input[placeholder="Your account name"],
+input[placeholder="Your password here"] {
+  padding: 21px 16px 21px 24px;
+  width: 336px;
+  height: 60px;
+  font-family: "Source_Sans_Pro";
+  color: #08979c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.6px;
+}
+
+img {
+  position: absolute;
+  margin-top: 308px;
+  margin-left: 346px;
+  filter: invert(1);
+}
+
+input[type="submit"] {
+  margin-top: 382px;
+  margin-left: 152px;
+  padding: 15px 39px 15px 38px;
+
+  width: 148px;
+  height: 60px;
+  border-radius: 60px;
+  font-family: "Source_Sans_Pro";
+  color: #08979c;
+  font-size: 24px;
+  font-weight: 400;
+}
