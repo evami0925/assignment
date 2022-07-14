@@ -33,6 +33,7 @@ body {
 
 * {
   box-sizing: border-box;
+  background-color: #1e3143;
 }
 .container {
   margin: 265px 494px;
@@ -41,6 +42,7 @@ body {
   border: 1px solid #1e3143;
   border-radius: 40px;
   position: relative;
+  box-shadow: -4px -4px 12px 0px #22405c80, 4px 4px 12px 0px #0f192378;
 }
 h1 {
   font-family: "roboto";
@@ -74,6 +76,7 @@ h1 {
   width: 336px;
   height: 60px;
   margin-left: 58px;
+  box-shadow: -4px -4px 12px 0px #93939340 inset, 4px 4px 12px 0px #152534 inset;
 }
 
 .account {
@@ -96,18 +99,20 @@ input[placeholder="Your password here"] {
   line-height: 17.6px;
 }
 
+::placeholder {
+  color: #08979c;
+}
+
 img {
   position: absolute;
   margin-top: 308px;
   margin-left: 346px;
-  filter: invert(1);
 }
 
 input[type="submit"] {
   margin-top: 382px;
   margin-left: 152px;
   padding: 15px 39px 15px 38px;
-
   width: 148px;
   height: 60px;
   border-radius: 60px;
@@ -115,4 +120,6 @@ input[type="submit"] {
   color: #08979c;
   font-size: 24px;
   font-weight: 400;
+  box-shadow: 4px 4px 12px 0px #0f192378, -4px -4px 12px 0px #22405c80;
+  border-style: none;
 }
