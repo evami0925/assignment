@@ -16,6 +16,7 @@ body {
 * {
   font-family: "Raleway";
   box-sizing: border-box;
+  /* font-style: normal; */
 }
 
 html,
@@ -26,10 +27,7 @@ body {
 /* Step 3: Select h3 elements and:
   - Give it top and bottom margin of 24px
 */
-h3 {
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
+
 
 h3 {
   margin: 24px 0px;
@@ -132,7 +130,7 @@ div.alert {
   - Not-allowed cursor
 */
 
-.warning button:disabled  {
+.warning button:disabled {
   color: grey;
   cursor: none;
 }
