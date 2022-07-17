@@ -1,13 +1,13 @@
 /* @font-face {
   font-family: raleway;
-  src: url(./img/fonts/Raleway/static/Raleway-Black.ttf);
+  src: url(../src/fonts/Raleway/static/Raleway-Black.ttf);
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "raleway";
-  src: url(./img/fonts/Raleway/static/Raleway-Black.ttf);
+  src: url(../src/fonts/Raleway/static/Raleway-Black.ttf);
   font-weight: 400;
   font-style: normal;
 } */
@@ -125,7 +125,3 @@ button.warning {
   align-items: flex-start;
 }
 
-h3 ~ div.dark-mode {
-  color: white;
-  background-color: #393939;
-}

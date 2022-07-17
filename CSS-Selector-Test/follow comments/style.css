@@ -16,7 +16,7 @@ body {
 * {
   font-family: "Raleway";
   box-sizing: border-box;
-  /* font-style: normal; */
+  /* 想问下这种引入方式和@font face区别*/
 }
 
 html,
@@ -27,7 +27,6 @@ body {
 /* Step 3: Select h3 elements and:
   - Give it top and bottom margin of 24px
 */
-
 
 h3 {
   margin: 24px 0px;
@@ -121,10 +120,17 @@ div.alert {
   font-size: 14px;
   margin-bottom: 12px;
 }
-.alert__details > p {
+
+.alert__details p:nth-child(1) {
   font-size: 16px;
   font-weight: bold;
 }
+
+/* .alert__details > p {
+  font-size: 16px;
+  font-weight: bold;
+} */
+
 /* Step 12: Select all disabled button and give it:
   - Color of grey
   - Not-allowed cursor
@@ -153,21 +159,24 @@ button.warning {
   - Margin top of 40px
   - Font style of italic
 */
-/* p:nth-child(1) {
+p:nth-child(1) {
+  margin-top: 40px;
+  font-style: italic;
+}
+
+/* p:first-child {
   margin-top: 40px;
   font-style: italic;
 } */
 
-p:first-child {
-  margin-top: 40px;
-  font-style: italic;
-}
+/* 二者p:nth-child(1)和p:first-child 是不是作用域一样 */
+
 /* Step 15: Select all sibling alert elements of h3 elements that have class of dark-mode and give it:
  - Text color: white
  - Background color of #393939
 */
 
-h3 ~ div.dark-mode {
+h3.dark-mode ~ h3 {
   color: white;
   background-color: #393939;
 }
