@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Roboto";
-  src: url(./Roboto/Roboto-Black.ttf);
+  src: url(./Roboto/Roboto-Regular.ttf);
   font-style: normal;
   font-weight: 600;
 }
@@ -45,19 +45,24 @@ body {
   box-shadow: -4px -4px 12px 0px #22405c80, 4px 4px 12px 0px #0f192378;
 }
 h1 {
+  position: absolute;
+  left: 58px;
+  top: 78px;
+  width: 200px;
+  height: 56px;
   font-family: "roboto";
   font-size: 48px;
   font-weight: 600;
-  line-height: 56.25px;
-  position: absolute;
-  margin: 78px 194px 360px 58px;
+  line-height: 1em;
   color: #08979c;
+  margin: 0;
+  font-style: normal;
 }
 
 .start {
   display: inline-block;
   position: absolute;
-  margin-top: 157px;
+  top: 157px;
   left: 58px;
   font-family: "Source_Sans_Pro";
   font-style: normal;
@@ -75,12 +80,12 @@ h1 {
   border-radius: 60px;
   width: 336px;
   height: 60px;
-  margin-left: 58px;
+  left: 58px;
   box-shadow: -4px -4px 12px 0px #93939340 inset, 4px 4px 12px 0px #152534 inset;
 }
 
 .account {
-  margin-top: 203px;
+  top: 203px;
 }
 
 .pwd {
@@ -110,8 +115,9 @@ img {
 }
 
 input[type="submit"] {
-  margin-top: 382px;
-  margin-left: 152px;
+  position: absolute;
+  top: 382px;
+  left: 152px;
   padding: 15px 39px 15px 38px;
   width: 148px;
   height: 60px;
@@ -123,3 +129,5 @@ input[type="submit"] {
   box-shadow: 4px 4px 12px 0px #0f192378, -4px -4px 12px 0px #22405c80;
   border-style: none;
 }
+
+/* 提问：发现可以在很多不做absolute的情况下用margin-top和margin-left也能实现图片，或者absolute情况下left，top，哪种情况更建议 */
