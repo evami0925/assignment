@@ -1,0 +1,38 @@
+.bar li {
+  list-style: none;
+  display: flex;
+}
+.bar li a {
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 50px;
+  width: 100px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 50px;
+  /* transition: 0.5s; */
+  color: white;
+  display: inline-block;
+  margin: auto;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  padding: 10px;
+  transition: 0.2s;
+}
+section {
+  width: 100px;
+  width: 400px;
+  background: black;
+}
+
+.bar li a:hover {
+  cursor: pointer;
+  color: yellow;
+  border: 1px solid yellow;
+}
