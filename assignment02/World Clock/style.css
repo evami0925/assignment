@@ -1,0 +1,55 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vh;
+  height: 100vh;
+}
+* {
+  box-sizing: border-box;
+}
+
+.clockContainer {
+  background-image: linear-gradient(
+    to left top,
+    rgb(79, 135, 95),
+    rgb(149, 222, 237)
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+}
+
+.row-one,
+.row-two {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+.column-one,
+.column-two {
+  display: flex;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 180px;
+  width: 180px;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-one {
+  margin: 20px 10px 20px 20px;
+}
+
+.column-two {
+  margin: 20px 20px 20px 10px;
+}
+
+.clockContainer img {
+  width: 130px;
+  height: 130px;
+}
